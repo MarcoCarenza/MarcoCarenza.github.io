@@ -25,7 +25,7 @@ const blogDatas =
         "filter-type": "all paper",
         "tags": ["Analysis", "Fighting games"],
         "description": "A one page critical analysis on the modern control scheme for Street Fighter 6.",
-        "timeline": "February 2026",
+        "timeline": "October 2024",
     },
     {
         "name" : "Game Concept - Aeon",
@@ -34,6 +34,6 @@ const blogDatas =
         "filter-type": "all gdd",
         "tags": ["Game Design Document"],
         "description": "A game design document based on an exercise for students applying to the Master Jeux et médias intéractifs numériques at the Conservatoire National des Arts et Métiers, Angoulême, France.",
-        "timeline": "February 2026",
+        "timeline": "September 2024",
     },
 ]
