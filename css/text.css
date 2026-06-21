@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Les Flos Sage';
+  src: url("/font/Les\ Flos\ Sage.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Super Pandora';
+  src: url("/font/Super\ Pandora.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap-Medium';
+  src: url("/font/Asap-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap-MediumItalic';
+  src: url("/font/Asap-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap-Light';
+  src: url("/font/Asap-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap-Thin';
+  src: url("/font/Asap-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BalsamiqSans';
+  src: url("/font/BalsamiqSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Super Pandora', sans-serif;
+  font-size: 4vh;
+  color: var(--primary-color);
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Asap-Medium', sans-serif;
+  font-weight: 400;
+  font-size: 5vh;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-family: 'Les Flos Sage', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 3vh;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+a {
+  font-family: "Asap-MediumItalic", sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+.link-in-text {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.link-in-text:hover {
+  background-color: var(--light-color);
+  cursor: pointer;
+}
+
+p {
+  font-family: 'Asap-Light', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--primary-color);
+  line-height: 23px;
+  margin-bottom: 1rem;
+}
+
+.nicer-text {
+  font-family: "Asap-Light", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--primary-color);
+  line-height: 23px;
+  margin-bottom: 0.5rem;
+}
+
+.project-window-title {
+  font-family: "Asap-Medium";
+  font-weight: 550;
+  color: var(--primary-color);
+  text-decoration: none;
+  align-self: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+b {
+  width: fit-content;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  margin-right: 12px;
+  font-family: "Asap-Light", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  padding: 0.6em 2em;
+  background: var(--light-color);
+  box-shadow: 0.25rem 0.25rem var(--dark-color);
+}
+
+
+.text-highlight {
+  font-weight: bold;
+  color: var(--highlight-color);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Carenza - Home</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/project-window.css">
+    <link rel="stylesheet" href="css/page-index.css">
+</head>
+<body>
+
+
+    <navbar id="navbar"></navbar>
+    
+    <div class="grid grid-index-1"></div>
+    <section class="landing-section">
+        <h1>Game Designer Portfolio</h1>
+    </section>
+
+    <div class="div-row" id="index-main-section">
+        <!-- ABOUT ME  -->
+        <section id="about-section">
+            <div class="div-row">
+                <img src="img/about/Pfp.png" alt="" class="profile-picture"> 
+                <p class = "intro-title">
+                    <span class="nameplate"> Hi! I’m <span class="text-highlight">Marco</span></span>
+                    <br><span class="text-highlight">Junior Game Designer</span>
+                    <br>MFA Student @ <a class="link-in-text" href="https://gamecenter.nyu.edu/academics/game-design-mfa/" target="_blank">NYU Game Center</a>
+                </p>   
+            </div>
+            <div class="intro-text">
+                <p>
+                    I'm a New York based generalist <span class="text-highlight">game designer</span> that wants to specialize in 
+                    <span class="text-highlight">systems design, quest design, and game production</span>. 
+                        Currently enrolled in the <span class="text-highlight">NYU Game Design MFA</span> set to 
+                            graduate in 2027. I enjoy working on every aspect of game development on any of the three popular game engines
+                             (Unreal, Unity, and Godot).
+                </p>
+                <p>
+                    I am always willing to learn and embark on new challenges, working on games I’ve never made before. 
+                </p>
+            </div>
+            <div class="div-row" id="skill-vignets">
+                <div>
+                    <h3>Tools</h3>
+                    <div style="line-height: 50px;">
+                        <span class="skill-vignet" >Unity</span>
+                        <span class="skill-vignet" >Unreal Engine</span>
+                        <span class="skill-vignet" >Godot</span>
+                        <span class="skill-vignet" >Photoshop</span>
+                        <span class="skill-vignet" >Microsoft Office</span>
+                        <span class="skill-vignet" >Trello</span>
+                        <span class="skill-vignet" >Canva</span>
+                        <span class="skill-vignet" >Audacity</span>
+                        <span class="skill-vignet" >Blender</span>
+                        <span class="skill-vignet" >Figma</span>
+                        <span class="skill-vignet" >Miro</span>
+                        <span class="skill-vignet" >Jira</span>
+                        <span class="skill-vignet" >GitHub</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Design</h3>
+                    <div style="line-height: 50px;">
+                        <span class="skill-vignet" >System Design</span>
+                        <span class="skill-vignet" >Quest Design</span>
+                        <span class="skill-vignet" >Game Production</span>
+                        <span class="skill-vignet" >Level Design</span>
+                        <span class="skill-vignet" >TTRPG Design</span>
+                    </div>
+                </div>  
+            </div>
+            <div>
+                <h3>LANGUAGE PROFICIENCY</h3>
+                <p>I have native fluency in <span class="text-highlight">English</span> and fluency in <span class="text-highlight">Italian</span>.</p>
+            </div>
+        </section>
+
+        <!-- PROJET SECTION -->
+        <section id="project-section">
+            <div class="project-window1" style="width:100%; margin: 0 0 20px 0;">
+                <img class="project-window1-image text-zone" id='project-image-a' onclick="window.location = '/html/projects/video-games/gow-ttrpg.html'" src="./img/video-games/key-art/GoWTTRPG_keyart.jpg"/>
+                <div class="project-card-data">
+                    <div class="project-card-content">
+                        <p id="project-nav-title" class="project-window-title">Currently working on</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-window2" style="width:100%; margin: 0 0 20px 0;">
+                <div class="project-window-navbar">
+                    <p class="project-window-title" id="project-id">UPDATES</p>
+                </div>
+                <div class="project-window-content">
+                    <ul>
+                        <li><p>Portfolio website development</p></li>
+                        <li><p>Coolmath Gamejam 2026</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-window2" style="width:100%; margin: 0 0 10px 0;">
+                <div class="project-window-navbar">
+                    <p class="project-window-title" id="project-id">CONTACT ME</p>
+                </div>
+                <div class="project-window-content" style="padding-left: 30px;">
+                    <p>Let's work together! Contact me at: <span><a href="javascript:void(0);" class="link-in-text" onclick="CopyText()">Marcocarenza2@gmail.com</a></span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer id="footer"></footer>
+
+    <script src="/js/copy.js"></script>
+    <script src="/js/components/navbar.js"></script>
+    <script src="/js/components/footer.js"></script>
+    <script src="/js/sfx-player.js"></script>
+
+    <audio id="XyloDO" src="audio/Xylophone-DO.wav"></audio>
+    <audio id="XyloRE" src="audio/Xylophone-RE.wav"></audio>
+    <audio id="XyloMI" src="audio/Xylophone-MI.wav"></audio>
+    <audio id="XyloFA" src="audio/Xylophone-FA.wav"></audio>
+    <audio id="XyloSOL" src="audio/Xylophone-SOL.wav"></audio>
+    <audio id="XyloLA" src="audio/Xylophone-LA.wav"></audio>
+    <audio id="XyloSI" src="audio/Xylophone-SI.wav"></audio>
+    <audio id="XyloDObis" src="audio/Xylophone-DObis.wav"></audio>
+</body>
+</html>

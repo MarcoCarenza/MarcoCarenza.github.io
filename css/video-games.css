@@ -1,0 +1,136 @@
+#video-game-section {
+  margin-bottom: 0px;
+  width: 75%;
+}
+
+.object-to-filter {
+  display: none;
+}
+
+.filter-show {
+  display: flex;
+}
+
+.filter-active-btn {
+  background-color: var(--accent-color);;
+}
+
+#filter-btn-container {
+  flex-wrap: wrap;
+}
+
+.video-game-row {
+  text-decoration: none;  
+  height: 16vw; 
+  width: 100%; 
+  margin-bottom:10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.vgr-text-column {
+  width: 65%;
+  height: 100%;
+}
+
+.vgr-text-column h3 {
+  margin: 0;
+  font-family: 'BalsamiqSans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.vgr-text-column p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.vgr-image-container {
+  border: solid var(--dark-color) 1.5px;
+  width: 35%; 
+  height: 95%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.video-game-card-img {
+  transition: 0.4s;
+  object-fit: cover;
+  margin: 0;
+  transform: scale(100%);
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+}
+
+.video-game-card-img:hover {
+  filter: brightness(50%);
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+.important-tag {
+  background-color: var(--accent-color);
+}
+
+.tag-list {
+  height: 22px;
+}
+
+@media screen and (max-width: 1000px) {
+    #video-game-card {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    #video-game-container {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        gap: 20px;
+    }
+    #vg-image {
+      width: 100%;
+      height: 100%;
+    }
+    .tag-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      row-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #video-game-card {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    #video-game-container {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        gap: 20px;
+    }
+    #vg-image {
+      width: 100%;
+      height: 100%;
+    }
+    .tag-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      row-gap: 16px;
+    }
+}
