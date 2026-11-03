@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/text.css">
     <link rel="stylesheet" href="/css/page-specific-project.css">
     <link rel="stylesheet" href="/css/project-window.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
     <div class="grid grid-header"></div>
@@ -27,10 +29,10 @@
             <div class="game-info">
                 <div>
                     <p>
-                        <span class="text-highlight">Platform: </span>- PC
-                        <br><span class="text-highlight">Duration: </span> 4 months
-                        <br><span class="text-highlight">Team size: </span> 3 students
-                        <br><span class="text-highlight">Role: </span> Lead Designer, Lead Programmer, Producer
+                        <span class="text-highlight">Platform: </span>PC
+                        <br><span class="text-highlight">Duration: </span>4 months
+                        <br><span class="text-highlight">Team size: </span>3
+                        <br><span class="text-highlight">Role: </span>Lead Designer & Lead Programmer & Producer
                     </p> 
                 </div>
                 <div class="div-column">
@@ -47,51 +49,88 @@
                 </div>
                 <div>
                     <p>
-                        A procedurally generated horror game set in the year 30XX, you are tasked to drill for water on a frozen planet for 
-                        Aquarii Inc. However, once you arrive you notice that you’re not the only one at the facility, as there is a monster 
-                        trying to stop you!
+                        <span class="text-highlight">Frozen Heart</span> is a procedurally generated horror game set in the year 30XX, you are tasked to drill for water on a frozen planet for 
+                        Aquarii Inc. However, once you arrive you notice that you’re not the only one at the facility, as there is a monster trying to stop you!
                         You need to explore the ever-changing facility while making sure that the drill keeps running. 
                     </p>
                     <p>
                         For this project I was the lead designer, lead programmer, co-level designer, and producer. I created most of the level 
-                        segments, and designed the random generation for the drilling facility, responsible for the monster’s AI behavior and 
-                        playmovement mechanics.
+                        segments used for the procedural generation, designed the random generation for the drilling facility, responsible for the monster’s AI behavior and 
+                        player movement mechanics.
+                        
+                    <div style="padding-bottom: 20px; padding-top: 10px;">
+                    <h3>Game Design & game loop</h3>
+                    <p>
+                        Our goals with the game was to create diverse gameplay experiences through the use of procedural generation, Invite the player to utilize their logic while they are panicking, and make the monster scary without having the player see them.
+                    The game loop revolves around the player having to do tasks, and escape the facility. If the player ignores these tasks, they will be debuffed making it easier for the monster to get them.
+                     While they explore the facility they need avoid the monster, and can do so by using their scanner. The scanner is an AOE pulse that detectes the nearest task, as well as informing the player how far the monster is. This gives them enough information to know if theyu 
+                     should keep exploring or hide and find another way around the facility.
                     </p>
+                      </p>
+                    <img src="/img/video-games/Frozen Heart/GameplayloopFrozenHeart.png" style=" width:50%; padding-bottom: 20px; padding-top: 20px; display:block; margin-left:auto; margin-right:auto;">
+                    <p>
+                    </p>
+                    <div style="padding-bottom: 20px; padding-top: 10px;">
+                    <h3>Level Design</h3>
+                    <p>
+                    For the project I sketched out a Parti, designing how to make the level navigable while adding the procedural generation. We decided to keep the structure of the facility simple and circular, that way the player wouldn't get too lost and frustrated while exploring.
+                    There are 7 fixed rooms in the facility that never change, these function as anchors so that the player can somewhat know where they are. The corridors and rooms connecting these anchor rooms are randomly generated, and everytime the player restarts the game or reaches a milestone,
+                    they are changed around. The connecting rooms are a premade set of rooms with various designs to keep the player on their toes.
+                    </p>
+                    <div class="image-row-container">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/ProcedurallyRoomFrozenHeart.png">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/MapFrozenHeart.png">
+                </div>
+                    </p>
+                    <img src="" style=" width:70%; padding-bottom: 20px; padding-top: 20px; display:block; margin-left:auto; margin-right:auto;">
+                    <p>
+                    
+                    <div style="padding-bottom: 20px; padding-top: 10px;">
+                    <h3>Unreal Scripting</h3>
+                    <p>
+                       This project was fully written with <span class="text-highlight">Unreal Engine 5 Blueprints</span>, as they provide a visual node-based scripting system that lets creators build game logic without writing traditional code. 
+                                            
+                     I scirpted the AI monster behavior, the procedural generation of the level, and all of the tasks the player must do.
+                    </p>
+                    <p>
+                       I was already familiar with blueprints, but during this project I learned how to script AI behavior using a behavior tree. The Monster was programmed to roam around the facility, and chase the player when it saw them.
+                        The monster used Pawnsensors with a cone that determines the vision, any time it would see the player it would make a loud screech, alerting the player that the monster sees them, and then begin to chase it.
+                        In order to make it so that the player could hide, the vision cone shrinks when player crouches, leading to many moments where the monster just keeps looking around for the player.
+                        When the monster would lose sight of player it move to its last seen location and investigate, walking to an area near the player to try and find them again. If it doesn't find the player it will end the search and roam else where.
+                    </p>
+                      <div style="padding-bottom: 20px; padding-top: 10px;">
+                    <h3>Production work</h3>
                     <p>
                         For this project we were running a SCRUM-like framework. I organized weekly sprints where we would run retrospectives, 
                         each week determining how the project would evolve and seeing how we could improve. 
+                   
+                        We had a Kanban style project backlog on Trello, where we would list out all tasks to do, and move them around to know what was being worked on and by who.
                     </p>
+                    </p>
+                    <img src="/img/video-games/Frozen Heart/FrozenHeartProduction.png" style=" width:60%; padding-bottom: 20px; padding-top: 20px; display:block; margin-left:auto; margin-right:auto;">
                     <p>
-                        We had a Kanban style project backlog on Trello, where we would list out all tasks to do, and move them around to 
-                        know what was being worked on and by who.
-                    </p>
                 </div>
-                <div style="padding-bottom: 20px; padding-top: 10px;">
+                <!-- Gallery -->
+                <div style="padding-bottom: 10px;  padding-top: 10px;">
                     <h3>GALLERY</h3>
+                </div>       
+                <div class="image-row-container">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/aaa.gif">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/cc.gif">
+                </div>
+                <div class="image-row-container">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/bbb.gif">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/FrozenHeartGif1.gif">
+                </div>
+                <div class="image-row-container">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/FrozenHeartIMG1.png">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/FrozenHeartIMG2.png">
+                </div>
+                <div class="image-row-container">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/FrozenHeartIMG3.png">
+                    <img class="gallery-image image-row-2" src="/img/video-games/Frozen Heart/FrozenHeartIMG4.png">
                 </div>
                 
-                    <div class="div-row" style="width: 100%; gap: 10px; padding-bottom: 20px;">
-                        <div class="div-column" style="gap: 20px; padding-bottom: 20px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/aaa.gif" style="width: 460px; height: 373px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/FrozenHeartIMG1.png" style="width: 460px; height: 373px;">
-                        </div>
-                         <div class="div-column" style="gap: 20px; padding-bottom: 20px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/bbb.gif" style="width: 460px; height: 373px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/FrozenHeartIMG2.png" style="width: 460px; height: 373px;">
-                        </div>
-                         <div class="div-column" style="gap: 20px; padding-bottom: 20px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/cc.gif" style="width: 460px; height: 373px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/FrozenHeartIMG3.png" style="width: 460px; height: 373px;">
-                        </div>
-                         <div class="div-column" style="gap: 20px; padding-bottom: 20px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/FrozenHeartGif1.gif" style="width: 460px; height: 373px;">
-                            <img class="gallery-image" src="/img/video-games/Frozen Heart/FrozenHeartIMG4.png" style="width: 460px; height: 373px;">
-                        </div>
-                </div>
-                
-                
-                <div style="padding-bottom: 40px;"></div>
-
             </div>
         </div>
     </section>
@@ -101,7 +140,7 @@
     <footer id="footer"></footer>
 
     <script src="/data/video-games.js"></script>
-    <script src="/js/components/navbar.js"></script>
+\    <script src="/js/components/navbar.js"></script>
     <script src="/js/components/footer.js"></script>
     <script src="/js/components/other-projects.js"></script>
     <script src="/js/next-vg.js"></script>

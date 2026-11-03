@@ -1,5 +1,5 @@
 function CopyText() 
 {
-    navigator.clipboard.writeText("hi-marionpbl@outlook.com");
+    navigator.clipboard.writeText("Marcocarenza2@gmail.com");
     alert("Copied");
 }

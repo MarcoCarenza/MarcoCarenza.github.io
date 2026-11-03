@@ -1,5 +1,6 @@
 const blogDatas = 
 [
+     
     {
         "name" : "Fighting games and the Fighting Game Community",
         "image1": "/img/blog/analysis-fgc/analysis-fgc-keyart.jpg",
@@ -15,7 +16,7 @@ const blogDatas =
         "link": "blog/game-cooking.html",
         "filter-type": "all paper",
         "tags": ["Analysis"],
-        "description": "An analysis on cooking as if it were a game.",
+        "description": "An analysis on cooking through a playful lense",
         "timeline": "February 2026",
     },
     {
@@ -35,5 +36,5 @@ const blogDatas =
         "tags": ["Game Design Document"],
         "description": "A game design document based on an exercise for students applying to the Master Jeux et médias intéractifs numériques at the Conservatoire National des Arts et Métiers, Angoulême, France.",
         "timeline": "September 2024",
-    },
+    }, 
 ]
