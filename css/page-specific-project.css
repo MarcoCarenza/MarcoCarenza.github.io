@@ -131,7 +131,7 @@
     align-items: flex-start;
     width: 100%;
     margin: auto;
-    gap: px; 
+    gap: 20px; 
     padding-bottom: 20px;
 }
 
@@ -147,7 +147,7 @@
 }
 
 .image-row-2{
-  width: 40%;
+  width: 49%;
 }
 
 .image-row-3{

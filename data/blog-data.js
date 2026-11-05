@@ -16,7 +16,7 @@ const blogDatas =
         "link": "blog/game-cooking.html",
         "filter-type": "all paper",
         "tags": ["Analysis"],
-        "description": "An analysis on cooking through a playful lense",
+        "description": "A paper written as an analysis on the activity of cooking seen through a playful lense. Arguing that cooking can be seen as a game, discussing Johan Huizinga’s Homo Ludens, and Roger Caillois' categories of play.",
         "timeline": "February 2026",
     },
     {
