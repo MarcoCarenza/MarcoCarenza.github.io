@@ -39,8 +39,8 @@
                     <a class="better-button" href="https://whitleywalton.itch.io/frozen-heart" target="_blank" style="margin-bottom:20px;">Find on Itch.io</a>
                 </div>
             </div>
-            <div>
-                <p>All screenshots and videos reflect the work of the entire team (art, code, audio, design…)</p>
+           <div>
+                <p style="text-align: center;">All screenshots and videos reflect the work of the entire team (art, code, audio, design…)</p>
             </div>
             <div>
                 <!-- Overview -->
@@ -60,9 +60,12 @@
                         
                     <div style="padding-bottom: 20px; padding-top: 10px;">
                     <h3>Game Design & game loop</h3>
+                    </div>
                     <p>
                         Our goals with the game was to create diverse gameplay experiences through the use of procedural generation, Invite the player to utilize their logic while they are panicking, and make the monster scary without having the player see them.
                     The game loop revolves around the player having to do tasks, and escape the facility. If the player ignores these tasks, they will be debuffed making it easier for the monster to get them.
+                    </p>
+                    <p>
                      While they explore the facility they need avoid the monster, and can do so by using their scanner. The scanner is an AOE pulse that detectes the nearest task, as well as informing the player how far the monster is. This gives them enough information to know if theyu 
                      should keep exploring or hide and find another way around the facility.
                     </p>
@@ -72,9 +75,13 @@
                     </p>
                     <div style="padding-bottom: 20px; padding-top: 10px;">
                     <h3>Level Design</h3>
+                    </div>
                     <p>
-                    For the project I sketched out a Parti, designing how to make the level navigable while adding the procedural generation. We decided to keep the structure of the facility simple and circular, that way the player wouldn't get too lost and frustrated while exploring.
-                    There are 7 fixed rooms in the facility that never change, these function as anchors so that the player can somewhat know where they are. The corridors and rooms connecting these anchor rooms are randomly generated, and everytime the player restarts the game or reaches a milestone,
+                    For the project I sketched out a Parti (a central idea / concept of a project), designing how to make the level navigable while adding the procedural generation. We decided to keep the structure of the facility simple and circular, that way the player wouldn't get too lost and frustrated while exploring.
+                    There are 7 fixed rooms in the facility that never change, these function as anchors so that the player can somewhat know where they are.
+                    </p>
+                    <p>
+                    The corridors and rooms connecting these anchor rooms are randomly generated, and everytime the player restarts the game or reaches a milestone,
                     they are changed around. The connecting rooms are a premade set of rooms with various designs to keep the player on their toes.
                     </p>
                     <div class="image-row-container">
@@ -87,6 +94,7 @@
                     
                     <div style="padding-bottom: 20px; padding-top: 10px;">
                     <h3>Unreal Scripting</h3>
+                    </div>
                     <p>
                        This project was fully written with <span class="text-highlight">Unreal Engine 5 Blueprints</span>, as they provide a visual node-based scripting system that lets creators build game logic without writing traditional code. 
                                             
@@ -96,7 +104,7 @@
                        I was already familiar with blueprints, but during this project I learned how to script AI behavior using a behavior tree. The Monster was programmed to roam around the facility, and chase the player when it saw them.
                         The monster used Pawnsensors with a cone that determines the vision, any time it would see the player it would make a loud screech, alerting the player that the monster sees them, and then begin to chase it.
                         In order to make it so that the player could hide, the vision cone shrinks when player crouches, leading to many moments where the monster just keeps looking around for the player.
-                        When the monster would lose sight of player it move to its last seen location and investigate, walking to an area near the player to try and find them again. If it doesn't find the player it will end the search and roam else where.
+                        When the monster would lose sight of the player it move to its last seen location and investigate, walking to an area near the player to try and find them again. If it doesn't find the player it will end the search and roam elsewhere.
                     </p>
                       <div style="padding-bottom: 20px; padding-top: 10px;">
                     <h3>Production work</h3>
