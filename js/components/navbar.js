@@ -21,6 +21,7 @@ if (window.location.pathname.endsWith('/index.html') || window.location.pathname
 else if(window.location.pathname.endsWith('/professional-projects.html')
     || window.location.pathname.endsWith('/TheList.html')
 || window.location.pathname.endsWith('/quantum.html')
+|| window.location.pathname.endsWith('/beyond-bounds.html')
 )
 {
     navElem = document.getElementById("profprojects");
@@ -39,7 +40,6 @@ else if(window.location.pathname.endsWith('/about.html'))
 else if(window.location.pathname.endsWith('/personal-projects.html')
 || window.location.pathname.endsWith('/ready-save-go.html')
 || window.location.pathname.endsWith('/gow-ttrpg.html')
-|| window.location.pathname.endsWith('/beyond-bounds.html')
 || window.location.pathname.endsWith('/ball-brawl.html')
 || window.location.pathname.endsWith('/exe-cuter.html')
 || window.location.pathname.endsWith('/frozen-heart.html')
