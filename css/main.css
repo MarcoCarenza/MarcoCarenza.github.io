@@ -27,18 +27,30 @@ body {
     --dark-color: rgb(13, 22, 24);
     --primary-color:rgb(0, 0, 0);
     --secondary-color: rgb(245, 241, 241);
-    --background-color: rgb(240, 233, 228);
+    --background-color: rgb(255, 255, 255);
     --grid-color: rgb(225, 219, 219);
 }
 
 body {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     margin: 0;
     padding: 0;
     position: relative;
     padding-bottom: 100px;
     overflow-x: hidden;
     cursor: default;
+    --s: 30px; 
+    --c1: var(--background-color);
+    --c2: var(--grid-color);
+    --_g: #0000 8%,var(--c1) 0 17%,#0000 0 58%;
+    
+    background: 
+      linear-gradient(135deg,#0000 20.5%,var(--c1) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+      linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+      linear-gradient(135deg,var(--_g),var(--c1) 0 67%,#0000 0),        
+      linear-gradient( 45deg,var(--_g),var(--c1) 0 67%,#0000 0 83%,var(--c1) 0 92%,#0000 0),
+      var(--c2); 
+    background-size: var(--s) var(--s);
 }
 
 .grid {
@@ -60,8 +72,9 @@ body {
     border-right: solid var(--grid-color) 0.5px;
     border-top: solid var(--grid-color) 0.5px;
     border-left: solid var(--grid-color) 0.5px;
-  
-    --s: 30px; /* control the size*/
+    background-color: var(--background-color);
+  /* control the size*/
+    /* --s: 30px; 
     --c1: var(--background-color);
     --c2: var(--grid-color);
     --_g: #0000 8%,var(--c1) 0 17%,#0000 0 58%;
@@ -72,7 +85,7 @@ body {
       linear-gradient(135deg,var(--_g),var(--c1) 0 67%,#0000 0),        
       linear-gradient( 45deg,var(--_g),var(--c1) 0 67%,#0000 0 83%,var(--c1) 0 92%,#0000 0),
       var(--c2); 
-    background-size: var(--s) var(--s);
+    background-size: var(--s) var(--s); */
 }
 
 section {
